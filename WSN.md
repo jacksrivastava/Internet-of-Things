@@ -109,6 +109,22 @@ Communication protocols in Wireless Sensor Networks (WSNs) are crucial for ensur
 - **Power Consumption**: Designed for low power consumption, with sleep modes to extend battery life.
 - **Applications**: Smart meters, asset tracking, remote monitoring, and other applications requiring wide area coverage.
 
+
+| Feature               | IEEE 802.15.4 / Zigbee                    | Bluetooth Low Energy (BLE)              | Wi-Fi (IEEE 802.11)                     | LoRa (Long Range)                      | 6LoWPAN                                | Cellular (NB-IoT, LTE-M)               |
+|-----------------------|-------------------------------------------|-----------------------------------------|-----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|
+| **Frequency Bands**   | 2.4 GHz, 915 MHz, 868 MHz                 | 2.4 GHz                                 | 2.4 GHz, 5 GHz                          | Sub-GHz (e.g., 868 MHz, 915 MHz)       | 2.4 GHz, 915 MHz, 868 MHz              | Licensed cellular bands                |
+| **Data Rate**         | Up to 250 kbps                            | Up to 1 Mbps                            | Up to several Gbps                      | 0.3 kbps to 50 kbps                    | Up to 250 kbps                         | NB-IoT: Up to 250 kbps; LTE-M: Up to 1 Mbps |
+| **Range**             | 10-100 meters                             | Up to 50 meters                         | Up to 100 meters indoors, longer outdoors | Up to 15 km in rural areas             | 10-100 meters                          | Extensive, leveraging cellular networks|
+| **Power Consumption** | Low                                        | Very low                                | High                                    | Very low                               | Low                                    | Low                                    |
+| **Topology**          | Star, Tree, Mesh                          | Star, Piconet                           | Star                                    | Star, Mesh                             | Mesh                                   | Star                                   |
+| **Security**          | AES-128 encryption                        | AES-128 encryption                      | WPA2/WPA3                               | AES-128 encryption                     | Inherits from IPv6 security            | LTE security (encryption, integrity)   |
+| **Applications**      | Home automation, industrial control, health care, environmental monitoring | Wearable devices, health monitors, proximity sensors | Video surveillance, high data rate applications | Agriculture, environmental monitoring, smart cities | IoT, direct Internet connectivity | Smart meters, asset tracking, remote monitoring |
+| **Scalability**       | High, suitable for large networks         | Moderate                                | Moderate                                | High, suitable for large networks      | High, supports large-scale deployments | High, supports large-scale deployments |
+| **Latency**           | Low to moderate                           | Low                                     | Low                                     | Low                                    | Low                                    | Low                                    |
+| **Interoperability**  | Good with IEEE 802.15.4 devices           | Good with BLE-enabled devices           | Excellent with Wi-Fi devices            | Moderate with LoRaWAN devices          | Excellent with IPv6 devices            | Excellent with cellular networks       |
+| **Standardization**   | IEEE 802.15.4, Zigbee Alliance            | Bluetooth SIG                           | IEEE 802.11                             | LoRa Alliance                          | IETF (6LoWPAN)                         | 3GPP (NB-IoT, LTE-M)                   |
+
+
 ## Challenges and Considerations
 
 1. **Power Efficiency**:
